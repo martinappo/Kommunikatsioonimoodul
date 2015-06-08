@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17643,7 +17643,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <sheets>
 <sheet>
 <plain>
-<text x="208.28" y="7.62" size="5.08" layer="94">wheelmod v0.6</text>
+<text x="208.28" y="7.62" size="5.08" layer="94">wheelmod v0.7</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="137.16" y="43.18"/>
@@ -17759,11 +17759,11 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <instance part="X2" gate="-2" x="-2.54" y="124.46"/>
 <instance part="X2" gate="-3" x="-2.54" y="121.92"/>
 <instance part="X2" gate="-4" x="-2.54" y="119.38"/>
-<instance part="GND24" gate="1" x="2.54" y="111.76" rot="MR0"/>
-<instance part="F1" gate="G$1" x="12.7" y="127"/>
-<instance part="P+11" gate="VCC" x="20.32" y="137.16"/>
-<instance part="C15" gate="G$1" x="20.32" y="121.92"/>
-<instance part="GND25" gate="1" x="20.32" y="114.3"/>
+<instance part="GND24" gate="1" x="33.02" y="111.76" rot="MR0"/>
+<instance part="F1" gate="G$1" x="12.7" y="124.46"/>
+<instance part="P+11" gate="VCC" x="20.32" y="134.62"/>
+<instance part="C15" gate="G$1" x="20.32" y="119.38"/>
+<instance part="GND25" gate="1" x="20.32" y="111.76"/>
 <instance part="X4" gate="-1" x="66.04" y="76.2" rot="R180"/>
 <instance part="X4" gate="-2" x="66.04" y="78.74" rot="R180"/>
 <instance part="X4" gate="-3" x="66.04" y="81.28" rot="R180"/>
@@ -17890,13 +17890,14 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <wire x1="-38.1" y1="111.76" x2="-38.1" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="X2" gate="-4" pin="S"/>
-<wire x1="2.54" y1="114.3" x2="2.54" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="GND25" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="2.54" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="33.02" y1="127" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -18280,7 +18281,7 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <label x="-27.94" y="43.18" size="1.778" layer="95"/>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<label x="22.86" y="127" size="1.778" layer="95"/>
+<label x="22.86" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="UVCC"/>
@@ -18301,12 +18302,12 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </segment>
 <segment>
 <pinref part="P+11" gate="VCC" pin="VCC"/>
-<wire x1="20.32" y1="127" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="124.46" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
-<junction x="20.32" y="127"/>
+<junction x="20.32" y="124.46"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="124.46" x2="20.32" y2="127" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="121.92" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -18635,13 +18636,6 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <label x="-73.66" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="X2" gate="-1" pin="S"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="127" x2="7.62" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="B" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="B"/>
@@ -18654,11 +18648,9 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <junction x="-27.94" y="124.46"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
-<wire x1="2.54" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="124.46" x2="7.62" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
-<label x="10.16" y="116.84" size="1.778" layer="95"/>
+<pinref part="X2" gate="-4" pin="S"/>
+<wire x1="2.54" y1="119.38" x2="7.62" y2="119.38" width="0.1524" layer="91"/>
+<label x="2.54" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A" class="0">
@@ -18674,10 +18666,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </segment>
 <segment>
 <pinref part="X2" gate="-3" pin="S"/>
-<wire x1="2.54" y1="121.92" x2="5.08" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="121.92" x2="5.08" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="114.3" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
-<label x="10.16" y="114.3" size="1.778" layer="95"/>
+<wire x1="2.54" y1="121.92" x2="7.62" y2="121.92" width="0.1524" layer="91"/>
+<label x="2.54" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -18706,6 +18696,13 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <pinref part="U1" gate="G$1" pin="PB3(MISO)"/>
 <pinref part="X4" gate="-1" pin="S"/>
 <wire x1="55.88" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="X2" gate="-2" pin="S"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
