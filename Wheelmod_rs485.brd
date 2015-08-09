@@ -37,8 +37,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -118,7 +118,7 @@
 <wire x1="42" y1="40" x2="0" y2="40" width="0" layer="20"/>
 <wire x1="0" y1="40" x2="0" y2="0" width="0" layer="20"/>
 <hole x="3.75" y="2.7" drill="1.2"/>
-<hole x="4.8" y="25" drill="1.2"/>
+<hole x="4.75" y="24.4" drill="1.2"/>
 <rectangle x1="26.1" y1="13.3" x2="34.3" y2="26.5" layer="30"/>
 <hole x="39" y="37" drill="3.2"/>
 <hole x="3" y="37" drill="3.2"/>
@@ -133,8 +133,8 @@
 <vertex x="10.9" y="14"/>
 <vertex x="11.5" y="14.7"/>
 </polygon>
-<hole x="4.8" y="33.53" drill="1.2"/>
-<hole x="19.01" y="31.05" drill="1.2"/>
+<hole x="4.75" y="33.93" drill="1.2"/>
+<hole x="19.61" y="35.5" drill="1.2"/>
 <text x="4.59" y="34.37" size="1.6" layer="48">RS485</text>
 <text x="13.53" y="34.42" size="1.6" layer="48">GPIO</text>
 </plain>
